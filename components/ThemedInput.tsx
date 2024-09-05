@@ -1,4 +1,6 @@
-import { Text,  StyleSheet, TextInput,  type TextInputProps } from "react-native";
+// dynamic text input component
+
+import { StyleSheet, TextInput,  type TextInputProps } from "react-native";
 
 import { useThemeColor } from "@/hooks/useThemeColor";
 import { useState } from "react";

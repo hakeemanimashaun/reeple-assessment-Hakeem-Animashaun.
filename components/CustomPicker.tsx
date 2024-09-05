@@ -23,10 +23,10 @@ type pickerOptions = {
 };
 
 const CustomPicker = (props: pickerOptions) => {
-  const [modalVisible, setModalVisible] = useState(false);
-  const [borderColor, setBorderColor] = useState("gray");
-  const theme = useColorScheme() ?? "light";
   const color = useThemeColor({ light: props.lightColor, dark: props.darkColor }, "text");
+  const [modalVisible, setModalVisible] = useState(false);
+  const theme = useColorScheme() ?? "light";
+  const [borderColor, setBorderColor] = useState(theme == "light" ? "#000" : color);
 
   return (
     <ThemedView style={styles.pickerContainer}>

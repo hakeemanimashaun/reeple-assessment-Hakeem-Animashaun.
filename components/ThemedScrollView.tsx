@@ -1,3 +1,5 @@
+// dynamic scrollview  component
+
 import React from 'react';
 import { ScrollView, type ScrollViewProps } from 'react-native';
 import { useThemeColor } from '@/hooks/useThemeColor';

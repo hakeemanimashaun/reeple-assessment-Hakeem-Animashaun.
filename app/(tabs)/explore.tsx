@@ -7,10 +7,10 @@ import { ThemedView } from '@/components/ThemedView';
 import { useAppContext } from '@/storage/ContextProvider';
 
 const RateItem = memo(({ item }: { item: { code: string; rate: number } }) => (
-  <View style={styles.rateItem}>
-    <Text style={styles.currencyCode}>{item.code}</Text>
-    <Text style={styles.currencyRate}>{item.rate}</Text>
-  </View>
+  <ThemedView style={styles.rateItem}>
+    <ThemedText style={styles.currencyCode}>{item.code}</ThemedText>
+    <ThemedText style={styles.currencyRate}>{item.rate}</ThemedText>
+  </ThemedView>
 ));
 
 const App = () => {
