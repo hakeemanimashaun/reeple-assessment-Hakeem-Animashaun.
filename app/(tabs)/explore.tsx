@@ -1,3 +1,5 @@
+// currency conversion list shows all current conversion rates in real time
+
 import React, { memo } from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 import { ThemedText } from '@/components/ThemedText';

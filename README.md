@@ -28,3 +28,9 @@ In the output, you'll find options to open the app in a
 username: admin
 password: password
 
+4. Main
+- this application features a login screen , a currency converter screen and a currency rate list screen
+- It has app context implemented
+- includes unit tests for components and screens
+
+# reeple-assessment-Hakeem-Animashaun.

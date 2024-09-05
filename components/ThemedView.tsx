@@ -1,3 +1,5 @@
+// dynamic view component
+
 import { View, type ViewProps } from 'react-native';
 
 import { useThemeColor } from '@/hooks/useThemeColor';

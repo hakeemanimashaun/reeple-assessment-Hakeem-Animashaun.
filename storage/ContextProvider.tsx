@@ -1,6 +1,7 @@
+// app context provides global state for the application
+
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
-// Define the AppContextType interface
 interface AppContextType {
   sourceCurrency: string;
   setSourceCurrency: React.Dispatch<React.SetStateAction<string>>;
@@ -18,13 +19,12 @@ interface AppContextType {
   setError: React.Dispatch<React.SetStateAction<string>>;
 }
 
-// Create the context with default values
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-// Create a provider component
+
 export const AppProvider = ({ children }: { children: ReactNode }) => {
   const [sourceCurrency, setSourceCurrency] = useState<string>('USD');
-  const [rates, setRates] = useState<{ [key: string]: number }>({}); // Initialized correctly
+  const [rates, setRates] = useState<{ [key: string]: number }>({});
   const [targetCurrency, setTargetCurrency] = useState<string>('EUR');
   const [amount, setAmount] = useState<string>('');
   const [convertedAmount, setConvertedAmount] = useState<string>('0');

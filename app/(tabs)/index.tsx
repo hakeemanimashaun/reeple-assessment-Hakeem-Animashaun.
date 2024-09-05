@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
+// currency converter screen allows you enter amount to convert and chose conversion currencies
+
+import React, { useEffect } from 'react';
 import {
-  View,
-  Text,
   StyleSheet,
-  TextInput,
-  ScrollView,
 } from 'react-native';
 import CustomPicker from '@/components/CustomPicker';
 import { ThemedTextInput } from '@/components/ThemedInput';

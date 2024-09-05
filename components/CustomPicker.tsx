@@ -1,9 +1,9 @@
+// custom picker component dynamically allows picking options passed to it in an array of stings and setting that option as value string
+
 import React, { useState } from "react";
 import {
   Modal,
   TouchableOpacity,
-  View,
-  Text,
   StyleSheet,
   FlatList,
   useColorScheme,

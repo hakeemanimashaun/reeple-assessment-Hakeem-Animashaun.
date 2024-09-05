@@ -1,6 +1,7 @@
-// app/login.tsx
+//login screen with two inputs and a validation check on login
+
 import React, { useState } from "react";
-import { View, TextInput, Button, StyleSheet, Text, TouchableOpacity } from "react-native";
+import { StyleSheet, TouchableOpacity } from "react-native";
 import { useRouter } from "expo-router";
 import { ThemedTextInput } from "@/components/ThemedInput";
 import { ThemedView } from "@/components/ThemedView";
@@ -12,8 +13,8 @@ export default function login() {
   const router = useRouter();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [loginFailed, setLoginFailed] = useState(false); // State for tracking login failure
-  const [hint, setHint] = useState(""); // State for storing hint text
+  const [loginFailed, setLoginFailed] = useState(false); 
+  const [hint, setHint] = useState("");
   const theme = useColorScheme() ?? "light";
 
   const handleLogin = () => {
@@ -44,7 +45,7 @@ export default function login() {
         secureTextEntry
       />
        {loginFailed && hint && (
-        <ThemedText type="default" style={styles.hint}>{hint}</ThemedText> // Show hint text if login fails
+        <ThemedText type="default" style={styles.hint}>{hint}</ThemedText>
       )}
 
       <TouchableOpacity
